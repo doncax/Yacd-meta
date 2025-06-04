@@ -41,6 +41,7 @@ export const data = {
   chart_style: 'Gaya Bagan',
   latency_test_url: 'URL Tes Latensi',
   lang: 'Bahasa',
+  proxy_provider: 'Penyedia Proxy',
   update_all_rule_provider: 'Perbarui Semua Penyedia Aturan',
   update_all_proxy_provider: 'Perbarui Semua Penyedia Proxy',
   reload_config_file: 'Muat Ulang File Konfigurasi',
@@ -74,7 +75,8 @@ export const data = {
   delete: 'Hapus',
   add_tag: 'Tambahkan Tag',
   client_tag: 'Tag Klien',
-  sourceip_tip: 'Tambahkan / di awal untuk menggunakan ekspresi reguler, jika tidak akan cocok persis (By Ohoang7)',
+  sourceip_tip:
+    'Tambahkan / di awal untuk menggunakan ekspresi reguler, jika tidak akan cocok persis (By Ohoang7)',
   disconnect: 'Putuskan Koneksi',
   internel: 'Koneksi Internal',
 };
