@@ -55,6 +55,7 @@ const langOptions = [
   ['zh-tw', '繁體中文'],
   ['en', 'English'],
   ['vi', 'Vietnamese'],
+  ['id', 'Indonesia'],
 ];
 
 const modeOptions = [
