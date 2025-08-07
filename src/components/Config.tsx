@@ -384,16 +384,14 @@ function ConfigImpl({
                 onClick={handleFlushFakeIPPool}
               />
             </div>
-            {version.meta && !version.premium && (
-              <div>
-                <div className={s0.label}>Restart</div>
-                <Button
-                  start={<RotateCw size={16} />}
-                  label={t('restart_core')}
-                  onClick={handleRestartCore}
-                />
-              </div>
-            )}
+            <div>
+              <div className={s0.label}>Restart</div>
+              <Button
+                start={<RotateCw size={16} />}
+                label={t('restart_core')}
+                onClick={handleRestartCore}
+              />
+            </div>
             {version.meta && !version.premium && (
               <div>
                 <div className={s0.label}>⚠️ Upgrade ⚠️</div>
