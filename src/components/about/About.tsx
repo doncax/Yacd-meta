@@ -48,7 +48,7 @@ function AboutImpl(props: Props) {
           }
         />
       ) : null}
-      <Version name="Yacd" version={__VERSION__} link="https://github.com/metacubex/yacd" />
+      <Version name="Dashboard" version={__VERSION__} link="https://github.com/doncax/yacd-meta" />
     </>
   );
 }
