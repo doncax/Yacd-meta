@@ -5,6 +5,7 @@ import { ClashAPIConfig } from '~/types';
 const endpoint = '/configs';
 const updateGeoDatabasesFileEndpoint = '/configs/geo';
 const flushFakeIPPoolEndpoint = '/cache/fakeip/flush';
+const flushDNSPoolEndpoint = '/cache/dns/flush';
 const restartCoreEndpoint = '/restart';
 const upgradeCoreEndpoint = '/upgrade';
 
@@ -59,4 +60,9 @@ export async function upgradeCore(apiConfig: ClashAPIConfig) {
 export async function flushFakeIPPool(apiConfig: ClashAPIConfig) {
   const { url, init } = getURLAndInit(apiConfig);
   return await fetch(url + flushFakeIPPoolEndpoint, { ...init, method: 'POST' });
+}
+
+export async function flushDNSPool(apiConfig: ClashAPIConfig) {
+  const { url, init } = getURLAndInit(apiConfig);
+  return await fetch(url + flushDNSPoolEndpoint, { ...init, method: 'POST' });
 }
