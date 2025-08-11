@@ -49,6 +49,7 @@ export const data = {
   upgrade_core: 'Tingkatkan Inti',
   update_geo_databases_file: 'Perbarui File Basis Data GEO',
   flush_fake_ip_pool: 'Hapus Cache Fake-IP',
+  flush_dns_pool: 'Hapus Cache DNS',
   enable_tun_device: 'Aktifkan Perangkat TUN',
   allow_lan: 'Izinkan LAN',
   tls_sniffing: 'Pemantau Paket Sniffer',

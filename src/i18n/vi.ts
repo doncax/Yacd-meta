@@ -49,6 +49,7 @@ export const data = {
   upgrade_core: 'Nâng cấp lõi Clash',
   update_geo_databases_file: 'Cập nhật tệp cơ sở dữ liệu GEO',
   flush_fake_ip_pool: 'Xóa bộ nhớ đệm fake-ip',
+  flush_dns_pool: 'Xóa dữ liệu DNS',
   enable_tun_device: 'Bật thiết bị TUN',
   allow_lan: 'Cho phép LAN',
   tls_sniffing: 'Bộ giám sát gói tin Sniffer',

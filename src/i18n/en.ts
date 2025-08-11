@@ -49,6 +49,7 @@ export const data = {
   upgrade_core: 'Upgrade core',
   update_geo_databases_file: 'Update GEO Databases ',
   flush_fake_ip_pool: 'Flush fake-ip data',
+  flush_dns_pool: 'Flush dns data',
   enable_tun_device: 'Enable TUN Device',
   allow_lan: 'Allow LAN',
   tls_sniffing: 'Sniffer',
