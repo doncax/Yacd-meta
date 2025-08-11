@@ -13,6 +13,7 @@ import { getClashAPIConfig, getLatencyTestUrl, getSelectedChartStyleIndex } from
 import {
   fetchConfigs,
   flushFakeIPPool,
+  flushDNSPool,
   getConfigs,
   reloadConfigFile,
   restartCore,
@@ -237,6 +238,10 @@ function ConfigImpl({
     dispatch(flushFakeIPPool(apiConfig));
   }, [apiConfig, dispatch]);
 
+  const handleFlushDNSPool = useCallback(() => {
+    dispatch(flushDNSPool(apiConfig));
+  }, [apiConfig, dispatch]);
+
   const { data: version } = useQuery(['/version', apiConfig], () =>
     fetchVersion('/version', apiConfig)
   );
@@ -382,6 +387,14 @@ function ConfigImpl({
                 start={<Trash2 size={16} />}
                 label={t('flush_fake_ip_pool')}
                 onClick={handleFlushFakeIPPool}
+              />
+            </div>
+            <div>
+              <div className={s0.label}>DNS</div>
+              <Button
+                start={<Trash2 size={16} />}
+                label={t('flush_dns_pool')}
+                onClick={handleFlushDNSPool}
               />
             </div>
             <div>
